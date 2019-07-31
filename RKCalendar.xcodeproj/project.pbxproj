@@ -24,10 +24,11 @@
 		019D282422DBCCC00001C990 /* demo-app-dark-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */; };
 		019D282922DBCD2E0001C990 /* demo-app-light-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */; };
 		019D282A22DBCD2E0001C990 /* demo-app-light-mode-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */; };
+		3C42416A22F1EE46000BF015 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C42416922F1EE46000BF015 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0112FD5122DB8D6800BB8F94 /* RKCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0112FD5122DB8D6800BB8F94 /* RKCalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKCalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0112FD5422DB8D6800BB8F94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0112FD5622DB8D6800BB8F94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0112FD5822DB8D6800BB8F94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-dark-mode-1.png"; sourceTree = "<group>"; };
 		019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-1.png"; sourceTree = "<group>"; };
 		019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-2.png"; sourceTree = "<group>"; };
+		3C42416922F1EE46000BF015 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../../../../../../System/Volumes/Data/Users/pym/www/Git/GitHub/pym/RKCalendar/Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,10 @@
 		0112FD4822DB8D6800BB8F94 = {
 			isa = PBXGroup;
 			children = (
+				3C42416922F1EE46000BF015 /* Package.swift */,
+				3C42416722F1EDCA000BF015 /* Sources */,
 				0179442A22DBB2AE0059FCF6 /* LICENSE.txt */,
-				0112FD5322DB8D6800BB8F94 /* RKCalendar */,
+				0112FD5322DB8D6800BB8F94 /* RKCalendarApp */,
 				0112FD5222DB8D6800BB8F94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,25 +75,24 @@
 		0112FD5222DB8D6800BB8F94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0112FD5122DB8D6800BB8F94 /* RKCalendar.app */,
+				0112FD5122DB8D6800BB8F94 /* RKCalendarApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0112FD5322DB8D6800BB8F94 /* RKCalendar */ = {
+		0112FD5322DB8D6800BB8F94 /* RKCalendarApp */ = {
 			isa = PBXGroup;
 			children = (
 				019D281E22DBCCAE0001C990 /* Images */,
 				0112FD5422DB8D6800BB8F94 /* AppDelegate.swift */,
 				0112FD5622DB8D6800BB8F94 /* SceneDelegate.swift */,
 				0112FD5822DB8D6800BB8F94 /* ContentView.swift */,
-				0112FD6822DB8DDC00BB8F94 /* Manager */,
 				0112FD5A22DB8D6A00BB8F94 /* Assets.xcassets */,
 				0112FD5F22DB8D6A00BB8F94 /* LaunchScreen.storyboard */,
 				0112FD6222DB8D6A00BB8F94 /* Info.plist */,
 				0112FD5C22DB8D6A00BB8F94 /* Preview Content */,
 			);
-			path = RKCalendar;
+			path = RKCalendarApp;
 			sourceTree = "<group>";
 		};
 		0112FD5C22DB8D6A00BB8F94 /* Preview Content */ = {
@@ -98,19 +101,6 @@
 				0112FD5D22DB8D6A00BB8F94 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0112FD6822DB8DDC00BB8F94 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				0112FD6922DB8EA800BB8F94 /* RKDate.swift */,
-				0112FD6B22DB901B00BB8F94 /* RKCell.swift */,
-				0112FD6D22DB912B00BB8F94 /* RKWeekdayHeader.swift */,
-				0112FD7322DB926A00BB8F94 /* RKMonth.swift */,
-				0112FD7522DB954900BB8F94 /* RKViewController.swift */,
-				0112FD6F22DB91DB00BB8F94 /* RKManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		019D281E22DBCCAE0001C990 /* Images */ = {
@@ -124,12 +114,33 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		3C42416722F1EDCA000BF015 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3C42416822F1EDD3000BF015 /* RKCalendar */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3C42416822F1EDD3000BF015 /* RKCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				0112FD6922DB8EA800BB8F94 /* RKDate.swift */,
+				0112FD6B22DB901B00BB8F94 /* RKCell.swift */,
+				0112FD6D22DB912B00BB8F94 /* RKWeekdayHeader.swift */,
+				0112FD7322DB926A00BB8F94 /* RKMonth.swift */,
+				0112FD7522DB954900BB8F94 /* RKViewController.swift */,
+				0112FD6F22DB91DB00BB8F94 /* RKManager.swift */,
+			);
+			path = RKCalendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0112FD5022DB8D6800BB8F94 /* RKCalendar */ = {
+		0112FD5022DB8D6800BB8F94 /* RKCalendarApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0112FD6522DB8D6A00BB8F94 /* Build configuration list for PBXNativeTarget "RKCalendar" */;
+			buildConfigurationList = 0112FD6522DB8D6A00BB8F94 /* Build configuration list for PBXNativeTarget "RKCalendarApp" */;
 			buildPhases = (
 				0112FD4D22DB8D6800BB8F94 /* Sources */,
 				0112FD4E22DB8D6800BB8F94 /* Frameworks */,
@@ -139,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = RKCalendar;
+			name = RKCalendarApp;
 			productName = RKCalendar;
-			productReference = 0112FD5122DB8D6800BB8F94 /* RKCalendar.app */;
+			productReference = 0112FD5122DB8D6800BB8F94 /* RKCalendarApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0112FD5022DB8D6800BB8F94 /* RKCalendar */,
+				0112FD5022DB8D6800BB8F94 /* RKCalendarApp */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +217,7 @@
 				0112FD7422DB926A00BB8F94 /* RKMonth.swift in Sources */,
 				0112FD5722DB8D6800BB8F94 /* SceneDelegate.swift in Sources */,
 				0112FD6A22DB8EA800BB8F94 /* RKDate.swift in Sources */,
+				3C42416A22F1EE46000BF015 /* Package.swift in Sources */,
 				0112FD5922DB8D6800BB8F94 /* ContentView.swift in Sources */,
 				0112FD7622DB954900BB8F94 /* RKViewController.swift in Sources */,
 				0112FD7022DB91DB00BB8F94 /* RKManager.swift in Sources */,
@@ -345,9 +357,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "RKCalendar/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "RKCalendarApp/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RKCalendar/Info.plist;
+				INFOPLIST_FILE = RKCalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,9 +376,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "RKCalendar/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "RKCalendarApp/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RKCalendar/Info.plist;
+				INFOPLIST_FILE = RKCalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0112FD6522DB8D6A00BB8F94 /* Build configuration list for PBXNativeTarget "RKCalendar" */ = {
+		0112FD6522DB8D6A00BB8F94 /* Build configuration list for PBXNativeTarget "RKCalendarApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0112FD6622DB8D6A00BB8F94 /* Debug */,
