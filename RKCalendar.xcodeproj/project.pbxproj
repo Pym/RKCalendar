@@ -24,7 +24,6 @@
 		019D282422DBCCC00001C990 /* demo-app-dark-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */; };
 		019D282922DBCD2E0001C990 /* demo-app-light-mode-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */; };
 		019D282A22DBCD2E0001C990 /* demo-app-light-mode-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */; };
-		3C42416A22F1EE46000BF015 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C42416922F1EE46000BF015 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		019D282022DBCCC00001C990 /* demo-app-dark-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-dark-mode-1.png"; sourceTree = "<group>"; };
 		019D282722DBCD2E0001C990 /* demo-app-light-mode-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-1.png"; sourceTree = "<group>"; };
 		019D282822DBCD2E0001C990 /* demo-app-light-mode-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo-app-light-mode-2.png"; sourceTree = "<group>"; };
-		3C42416922F1EE46000BF015 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../../../../../../System/Volumes/Data/Users/pym/www/Git/GitHub/pym/RKCalendar/Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 		0112FD4822DB8D6800BB8F94 = {
 			isa = PBXGroup;
 			children = (
-				3C42416922F1EE46000BF015 /* Package.swift */,
 				3C42416722F1EDCA000BF015 /* Sources */,
 				0179442A22DBB2AE0059FCF6 /* LICENSE.txt */,
 				0112FD5322DB8D6800BB8F94 /* RKCalendarApp */,
@@ -217,7 +214,6 @@
 				0112FD7422DB926A00BB8F94 /* RKMonth.swift in Sources */,
 				0112FD5722DB8D6800BB8F94 /* SceneDelegate.swift in Sources */,
 				0112FD6A22DB8EA800BB8F94 /* RKDate.swift in Sources */,
-				3C42416A22F1EE46000BF015 /* Package.swift in Sources */,
 				0112FD5922DB8D6800BB8F94 /* ContentView.swift in Sources */,
 				0112FD7622DB954900BB8F94 /* RKViewController.swift in Sources */,
 				0112FD7022DB91DB00BB8F94 /* RKManager.swift in Sources */,
